@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Myriad Pro Regular.ttf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiskStatusGetAndWithProgressbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TY-fW-7Hz">
+                                <rect key="frame" x="117" y="358" width="180" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33.8 of 128 GB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="042-IZ-Gho">
+                                        <rect key="frame" x="42.5" y="125" width="95" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="OGX-cG-ALf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xq4-Ju-azW" userLabel="used">
+                                        <rect key="frame" x="73.5" y="35" width="33" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="teI-xP-Hpg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.35294118520000001" green="0.25098040700000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="042-IZ-Gho" firstAttribute="centerX" secondItem="4TY-fW-7Hz" secondAttribute="centerX" id="2V4-Il-HGw"/>
+                                    <constraint firstAttribute="height" constant="180" id="7Ag-Df-tQl"/>
+                                    <constraint firstItem="xq4-Ju-azW" firstAttribute="top" secondItem="4TY-fW-7Hz" secondAttribute="top" constant="35" id="Q5h-sj-Qpf"/>
+                                    <constraint firstAttribute="width" constant="180" id="aTm-g0-HNx"/>
+                                    <constraint firstAttribute="bottom" secondItem="042-IZ-Gho" secondAttribute="bottom" constant="42" id="dmO-kZ-JQq"/>
+                                    <constraint firstItem="xq4-Ju-azW" firstAttribute="centerX" secondItem="4TY-fW-7Hz" secondAttribute="centerX" id="mUi-ht-q0d"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwg-qI-q6X" customClass="ProgressBar" customModule="Smart_Cleaner" customModuleProvider="target">
+                                <rect key="frame" x="97" y="338" width="220" height="220"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="GJD-EY-FFg"/>
+                                    <constraint firstAttribute="height" constant="220" id="LCk-fN-6ba"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startGradientColor">
+                                        <color key="value" red="0.2784313725" green="0.31372549020000001" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endGradientColor">
+                                        <color key="value" red="0.4039215686" green="0.4431372549" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4TY-fW-7Hz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1e3-KT-0wz"/>
+                            <constraint firstItem="dwg-qI-q6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Geq-Co-ODY"/>
+                            <constraint firstItem="dwg-qI-q6X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UpH-9o-c1E"/>
+                            <constraint firstItem="4TY-fW-7Hz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x5a-Q1-z1T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circelView" destination="4TY-fW-7Hz" id="2KQ-Mk-VDj"/>
+                        <outlet property="diskInfoLabel" destination="042-IZ-Gho" id="oDr-ei-cgn"/>
+                        <outlet property="diskStatusCircle" destination="dwg-qI-q6X" id="qZG-Fw-zt8"/>
+                        <outlet property="statusLabel" destination="xq4-Ju-azW" id="7kt-u9-ivp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
